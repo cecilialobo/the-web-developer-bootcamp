@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating a Form</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form>
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="John" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Smith" name="lastName" required>            
+            </div>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="Password" placeholder="your password" minlength="5" maxlength="10" required>
+                <!--other way to put a limit of characters on the password are the atributes pattern=".{5,10}" and title="Password must be between 5 to 10 characters." (this is the error message that the browser shows)-->
+            </div>
+            <div>
+                <label for="birthday">Birthday:</label>
+                <select id="birthday" name="monthOfBirth">
+                    <option value="">Month</option>
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select>
+                <select name="dayOfBirth">
+                    <option value="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                </select>
+                <select name="yearOfBirth">
+                    <option value="">Year</option>
+                    <option value="1970">1970</option>
+                    <option value="1971">1971</option>
+                    <option value="1972">1972</option>
+                    <option value="1973">1973</option>
+                    <option value="1974">1974</option>
+                    <option value="1975">1975</option>
+                    <option value="1976">1976</option>
+                    <option value="1977">1977</option>
+                    <option value="1978">1978</option>
+                    <option value="1979">1979</option>
+                    <option value="1980">1980</option>
+                    <option value="1981">1981</option>
+                    <option value="1982">1982</option>
+                </select>
+            </div>
+            <div>
+                <label for="termsAndCondition">I agree to the terms and Condition</label>
+                <input type="checkbox" id="termsAndCondition" name="agreed">
+            </div>
+            <input type="submit">
+        </form>
+        
+    </body>
+</html> 
